@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Libro</title>
+    <link rel="stylesheet" href="/Frontend/public/assets/styles/style.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="/Frontend/public/assets/video/crescent-moon-and-clouds.3840x2160.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+    </div>  
+    <header>
+        <h1>Detalles del Libro</h1>
+    </header>
+    <main>
+        <div id="libro-detalle"></div>
+        <button class="boton-volver" onclick="history.back()">Volver</button>
+    </main>
+    <script type="module" src="/Frontend/src/models/detalles.js"></script>
+</body>
+</html>

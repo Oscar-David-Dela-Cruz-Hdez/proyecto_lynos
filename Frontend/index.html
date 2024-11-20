@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+  <link rel="stylesheet" href="public/assets/styles/index.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="public/assets/video/crescent-moon-and-clouds.3840x2160.mp4" type="video/mp4">
+            el navegador no soporta video.
+        </video>
+    </div>
+    <header>
+        <h1>Libreria</h1>
+    </header>
+    <main>
+        <h2>Bienvenidos a la libreria, por favor inicie sesión para acceder al catálogo</h2>
+        <div class="login-container">
+            <h1>Login</h1>
+            <div class="form-group">
+                <label for="txt_email">Correo Electronico</label>
+                <input type="email" id="txt_email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="txt_password">Contraseña</label>
+                <input type="password" id="txt_password" placeholder="Contraseña" required>
+            </div>
+            <div class="form-group">
+                <button id="btn_login">Ingresar</button>
+            </div>
+            <div class="form-group">
+                <button id="btn_loginGoogle">Ingresar con Google</button>
+            </div>
+            <a href="./public/templates/registro.html">¿No tiene una cuenta?, ¡Regístrese!</a>
+        </div>
+    </main>
+    <footer>
+      <h6>Libreria Oscar, Todos los derechos reservados. SA.De.CV</h6>
+    </footer>
+    <script type="module" src="./src/services/login.js"></script>
+</body>
+</html>

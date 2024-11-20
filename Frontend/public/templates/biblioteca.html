@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería</title>
+    <link rel="stylesheet" href="/Frontend/public/assets/styles/style.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="/Frontend/public/assets/video/crescent-moon-and-clouds.3840x2160.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+    </div>  
+    <header>
+        <h1>Librería</h1>
+        <form id="busqueda">
+            <input type="text" id="Ibusqueda" placeholder="Buscar libro por título">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+       
+    <aside id="contenedorDeFiltros">
+        <h2>Filtrar libro por categoría</h2>
+    </aside>
+    <aside id="contenedor-cita">
+            <p id="cita" class="tipografia">Cargando cita...</p>
+            <p id="autor"></p>
+    </aside>
+    <main>
+        <div id="catalogo" class="catalogo"></div>
+    </main>
+    <script type="module" src="/Frontend/src/models/script.js"></script>
+    <script type="module" src="/Frontend/src/models/cita.js"></script>
+</body>
+</html>
