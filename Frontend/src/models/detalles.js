@@ -2,7 +2,6 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const bookId = urlParams.get('id');
-
 const contenedor_libro_detalle = document.getElementById('libro-detalle');
 
 // Verificar si se obtuvo el ID
